@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  logotipo = 'assets/logotipo.png';  
+  wiki = 'assets/wiki.png';
+  fpf = 'assets/fpf.png';
+
   constructor() {}
+
 
 }

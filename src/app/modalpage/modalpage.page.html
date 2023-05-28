@@ -1,0 +1,43 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>modalpage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">modalpage</ion-title>
+      <ion-buttons>
+        <button ion-button (click)="dismiss()">
+            Close
+        </button>
+      </ion-buttons>
+      <ion-title>Playing</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding>
+<h2>{{value}}</h2>
+<iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getValue())' width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</ion-content>
+</ion-content> -->
+
+
+<ion-header>
+  <ion-toolbar>
+
+<ion-title>Playing</ion-title>
+
+</ion-toolbar>
+
+<ion-buttons class="close">
+  <button ion-button (click)="dismiss()" >
+      Close
+  </button>
+</ion-buttons>
+
+</ion-header>
+<ion-content padding>
+<h2>{{value}}</h2>
+<iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getValue())' width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</ion-content>
